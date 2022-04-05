@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background-image: url(flower.jpg);
+  background-size: 100px 100px;
+  animation: mymove  5s infinite;
+}
+
+@keyframes mymove {
+  50% { background-size: 100px 100px;
+  	background-position: left bottom;}
+}
+body{
+  background-color: #BDB76B;
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of background-size</h1>
+
+<p>Gradually change the background-size from "10px 10px" to "125px 125px", and back:<p>
+<div id="myDIV"></div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
